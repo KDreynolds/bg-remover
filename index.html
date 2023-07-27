@@ -6,6 +6,7 @@
     <title>Bridger Photonics - Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
@@ -87,29 +88,33 @@
     </section>
 
     <!-- Image Upload Section -->
-  <section class="section terminal">
-    <div class="container">
-      <p class="prompt">$ Upload_Image</p>
-      <form action="/remove_background" method="post" enctype="multipart/form-data">
-        <div class="file">
-          <label class="file-label">
-            <input class="file-input" type="file" name="image" accept="image/*" required>
-            <span class="file-cta">
-              <span class="file-icon">
-                <i class="fas fa-upload"></i>
+    <section class="section terminal">
+      <div class="container">
+        <p class="prompt">$ Upload_Image</p>
+        <form hx-post="/remove_background" hx-encoding="multipart/form-data" hx-target="#output-image" hx-swap="outerHTML">
+          <div class="file">
+            <label class="file-label">
+              <input class="file-input" type="file" name="image" accept="image/*" required>
+              <span class="file-cta">
+                <span class="file-icon">
+                  <i class="fas fa-upload"></i>
+                </span>
+                <span class="file-label">
+                  Choose an image…
+                </span>
               </span>
-              <span class="file-label">
-                Choose an image…
-              </span>
-            </span>
-          </label>
+            </label>
+          </div>
+          <div class="control">
+            <button class="button is-link" type="submit">Remove Background</button>
+          </div>
+        </form>
+        <!-- Output Image Box -->
+        <div id="output-image" class="image-box">
+          <!-- Image will be displayed here -->
         </div>
-        <div class="control">
-          <button class="button is-link" type="submit">Remove Background</button>
-        </div>
-      </form>
-    </div>
-  </section>
+      </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="section terminal">
