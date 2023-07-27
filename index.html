@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bridger Photonics - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="./download_grey.png" width="112" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            Documentation
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-white">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-black">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <section class="section terminal">
+		<div class="container">
+		  <p class="prompt">$ Welcome</p>
+		  <h1 class="title">Bridger Photonics</h1>
+		  <h2 class="subtitle">Emission reductions made simple.<span class="cursor">_</span></h2>
+		</div>
+	  </section>
+
+    <!-- About Section -->
+    <section class="section terminal">
+      <div class="container">
+        <p class="prompt">$ About_Bridger_Photonics</p>
+        <!-- Your about info here -->
+      </div>
+    </section>
+
+    <!-- Image Upload Section -->
+  <section class="section terminal">
+    <div class="container">
+      <p class="prompt">$ Upload_Image</p>
+      <form action="/remove_background" method="post" enctype="multipart/form-data">
+        <div class="file">
+          <label class="file-label">
+            <input class="file-input" type="file" name="image" accept="image/*" required>
+            <span class="file-cta">
+              <span class="file-icon">
+                <i class="fas fa-upload"></i>
+              </span>
+              <span class="file-label">
+                Choose an image…
+              </span>
+            </span>
+          </label>
+        </div>
+        <div class="control">
+          <button class="button is-link" type="submit">Remove Background</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+    <!-- Contact Section -->
+    <section class="section terminal">
+      <div class="container">
+        <p class="prompt">$ Contact_Us</p>
+        <!-- Your contact info here -->
+      </div>
+    </section>
+  </body>
+  <!-- Footer Section -->
+<footer class="footer">
+	<div class="content has-text-centered">
+	  <p>
+		<strong class="name">Kyle Reynolds</strong> © 2023. All rights reserved.
+	  </p>
+	  <p>
+		Contact me at <a href="mailto:your.email@example.com">kylereynoldsdev@gmail.com</a>
+	  </p>
+	  <p>
+		<a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank">LinkedIn</a> |
+		<a href="https://github.com/your-github-profile" target="_blank">GitHub</a>
+	  </p>
+	</div>
+  </footer>
+  
+</html>

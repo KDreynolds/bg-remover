@@ -1,0 +1,83 @@
+body {
+	background-color: #121212;
+	color: #0f0;
+	font-family: 'Courier New', monospace;
+	min-height: 100vh; /* This ensures that your body takes up at least the full height of the viewport */
+	display: flex; /* These two lines ensure your content doesn't stretch to fill the whole page */
+	flex-direction: column;
+  }
+  
+  .terminal {
+	background-color: #121212;
+	color: #0f0;
+	border-radius: 5px;
+	padding: 2em;
+  }
+  
+  .prompt {
+	color: #0f0;
+  }
+  
+  .cursor {
+	padding-left: 5px;
+	animation: blink 1s step-start 0s infinite;
+  }
+  
+  /* Keyframes for the blinking cursor animation */
+  @keyframes blink {
+	0%, 50% {
+	  color: #0f0; /* Change to the color of your text */
+	}
+	51%, 100% {
+	  color: transparent; /* This makes the cursor disappear */
+	}
+  }
+  
+  .box, .content {
+	background-color: #262626; /* This is a slightly lighter dark color for contrast */
+	color: #0f0; /* This is a green color, you can adjust as needed */
+  }
+  
+  .title, .subtitle {
+	color: #0f0;
+  }
+
+  .footer {
+	background-color: #262626;
+	color: #0f0;
+	padding: 2em 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+  }
+  
+  .footer a {
+	color: #0f0;
+	text-decoration: underline;
+  }
+
+  .name {
+	color: whitesmoke;
+  }
+
+.navbar {
+  background-color: #262626;
+}
+
+.project {
+  display: flex;
+}
+
+.project-image {
+  margin-right: 1em;  /* Add some space between the image and the text */
+  flex-shrink: 0;     /* Prevent the image from shrinking if the container gets too narrow */
+}
+
+.project-info {
+  flex-grow: 1;       /* Allow the text to take up the remaining space */
+  padding-left: 1em;
+}
+
+.prompt {
+	padding-bottom: 1em;
+}
